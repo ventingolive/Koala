@@ -1,5 +1,13 @@
 # Koala - Web Engineering Challenge
 
+### Casey's Notes:
+First off this was a really cool challenge and I really enjoyed working on the story and building out the app.  I am very comfortable in JS and React but have not had much time with typescript so that was really enjoyable to get to work with typescript.
+
+The only additional package that I added was GreenSock (gsap) which makes animations quicker to write. 
+I wrapped the app in a system context parent that handles all state functionality for all of the child components to keep things organized and to allow for easy feature expansion.  
+
+I look forward to your feedback so that I can continue to grow!
+
 ### The Backstory...
 A high-profile client has hired your company to build a countdown clock web app to help them keep track of an internal deadline. Since this deadline keeps changing, the countdown must be able to be reset and adjusted as necessary.
 
