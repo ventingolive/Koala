@@ -67,6 +67,11 @@ export const StyledInput = styled.input`
   width: 50px;
   border-radius: 5px;
   font-size: 2em;
+
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `; 
 export const StyledButtonAlign = styled.div`
   display: flex;

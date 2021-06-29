@@ -77,13 +77,13 @@ export const Countdown = () => {
         time.sec = tempsplit[2];
 
         timestr = time.hour + time.min + time.sec;
-        if(timestr !== 'Invalidundefinedundefined')
+        if(timestr !== 'Invalidundefinedundefined')//useEffect will occasionally attempt to init with bad data/don't want that data making it to state variables
           setTimerTime(time.hour + ':' + time.min + ':' + time.sec);
 
         timeNumbers = timestr.toString().split('');
         updateTimerDisplay(timeNumbers);
 
-        if (timestr === '000000' || cancelTimerRef.current) {
+        if (timestr === '000000' || cancelTimerRef.current) {//cancelTimerRef = Reset Timer
           updateTimerDisplay(emptyTimer);
         }
         else {

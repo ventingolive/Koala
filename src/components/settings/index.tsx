@@ -11,6 +11,7 @@ export const Settings = () => {
     const { setTimerTime } = useContext(SettingContext)
     const { activateMenu } = useContext(SettingContext)
 
+    //trigger timer
     function initTimer() {
         var hours = (document.getElementById('inputHours') as HTMLInputElement).value;
         var minutes = (document.getElementById('inputMinutes') as HTMLInputElement).value;
@@ -38,13 +39,13 @@ export const Settings = () => {
             <StyledCloseButton onClick={() => { activateMenu(false) }}>Close</StyledCloseButton>
             <StyledInputAlign>
                 <StyledInputLabelAlign>
-                    <StyledInput type="text" id="inputHours"></StyledInput><label htmlFor="inputHours">HOURS</label>
+                    <StyledInput type="number" id="inputHours"></StyledInput><label htmlFor="inputHours">HOURS</label>
                 </StyledInputLabelAlign>
                 <StyledInputLabelAlign>
-                    <StyledInput type="text" id="inputMinutes"></StyledInput><label htmlFor="inputHours">MINS</label>
+                    <StyledInput type="number" id="inputMinutes"></StyledInput><label htmlFor="inputHours">MINS</label>
                 </StyledInputLabelAlign>
                 <StyledInputLabelAlign>
-                    <StyledInput type="text" id="inputSeconds"></StyledInput><label htmlFor="inputHours">SECS</label>
+                    <StyledInput type="number" id="inputSeconds"></StyledInput><label htmlFor="inputHours">SECS</label>
                 </StyledInputLabelAlign>
             </StyledInputAlign>
             <StyledButtonAlign>
